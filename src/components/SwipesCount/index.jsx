@@ -10,6 +10,25 @@ const SwipesCounter = () => {
 
   useEffect(() => {
     fetchSwipeCount();
+
+    const channel = supabase
+      .channel("public:myLikedSongs")
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: "myLikedSongs",
+        },
+        async () => {
+          fetchSwipeCount();
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
   }, []);
   return (
     <div className="bg-[#F9F0FF] py-[40px] max-mlg:py-[20px] ">
