@@ -4,7 +4,7 @@ import Layout from "../layout";
 import AboutUs from "../pages/AboutUs";
 import TermsAndConditions from "../pages/TermsAndConditions";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
-import Search from "../pages/Search/Search";
+import Search from "../pages/Search";
 
 const router = createBrowserRouter([
   {

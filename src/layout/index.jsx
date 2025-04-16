@@ -5,6 +5,7 @@ import { Outlet, useLocation } from "react-router";
 
 const Layout = () => {
   const { pathname } = useLocation();
+  const isSeachPage = pathname == "/search";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -12,9 +13,9 @@ const Layout = () => {
 
   return (
     <div>
-      <Header />
+      {!isSeachPage && <Header />}
       <Outlet />
-      <Footer />
+      {!isSeachPage && <Footer />}
     </div>
   );
 };
