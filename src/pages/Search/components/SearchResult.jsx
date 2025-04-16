@@ -1,14 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router";
 
-const SearchResult = () => {
+const SearchResult = ({ content, title, url }) => {
   return (
-    <div className='py-[20px] border-b border-b-[#EEEEEE]'>
+    <div className="py-[20px] border-b border-b-[#EEEEEE]">
       <div className="px-[40px] max-lg:px-[20px]">
-      <a className='text-[20px] font-semibold text-[#8A4DFF] underline' href="">Terms and Conditions</a>
-      <p className='text-[14px] leading-[normal] mt-[8px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen...</p>
+        <Link
+          className="text-[20px] font-semibold text-[#8A4DFF] underline"
+          to={url}
+        >
+          {title}
+        </Link>
+        <p className="text-[14px] leading-[normal] mt-[8px]">{content}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SearchResult
+export default SearchResult;

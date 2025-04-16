@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Logo from "../../assets/logo-header.png";
 import SearchIcon from "../../assets/icons/search-icon.svg";
 import menu from "../../assets/icons/menu.svg";
-import { Link, useLocation } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { routes } from "../../constants";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const currentPath = location.pathname;
   const [showMobileNav, setShowMobileNav] = useState(false);
 
@@ -36,7 +37,10 @@ const Header = () => {
           </div>
           <div className="flex items-center justify-between gap-[20px] max-md:gap-[12px]">
             <button className="btn-pri">Join</button>
-            <button className="w-[50px] cursor-pointer max-lg:w-auto">
+            <button
+              className="w-[50px] cursor-pointer max-lg:w-auto"
+              onClick={() => navigate("/search")}
+            >
               <img src={SearchIcon} alt="" />
             </button>
             <button
