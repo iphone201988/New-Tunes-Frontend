@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchInput from './components/SearchInput'
 import SearchResult from './components/SearchResult'
+import NoResult from './components/NoResult'
 
 const Search = () => {
   return (
@@ -8,9 +9,11 @@ const Search = () => {
       <SearchInput/>
       <div className=" max-w-[800px] mx-auto rounded-2xl bg-[#fff] pb-[20px] mt-[40px] pt-[20px]">
         <p className='text-center text-[18px] font-semibold border-b border-b-[#EEEEEE] pb-[8px]'>Results from this site</p>
+        {/* <SearchResult/>
         <SearchResult/>
-        <SearchResult/>
-        <SearchResult/>
+        <SearchResult/> */}
+
+        <NoResult/>
       </div>
     </div>
   )
