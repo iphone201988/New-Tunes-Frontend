@@ -14,7 +14,7 @@ const Features = () => {
             <h3 className="text-[38px] text-[#8A4DFF] font-bold text-center mt-[20px] mb-[10px] max-lg:text-[26px]">
               Discover
             </h3>
-            <p className="text-[24px] text-[#53A4D6] font-medium text-center leading-[normal] max-lg:text-[18px]">
+            <p className="text-[24px] text-[#000] font-medium text-center leading-[normal] max-lg:text-[18px]">
               Discover new music from <br /> upcoming artists
             </p>
           </div>
@@ -25,7 +25,7 @@ const Features = () => {
             <h3 className="text-[38px] text-[#8A4DFF] font-bold text-center mt-[20px] mb-[10px] max-lg:text-[26px]">
               Collaborate
             </h3>
-            <p className="text-[24px] text-[#53A4D6] font-medium text-center leading-[normal] max-lg:text-[18px]">
+            <p className="text-[24px] text-[#000] font-medium text-center leading-[normal] max-lg:text-[18px]">
               Collaborate with fellow musicians <br /> and others in the music
               industry
             </p>
@@ -37,7 +37,7 @@ const Features = () => {
             <h3 className="text-[38px] text-[#8A4DFF] font-bold text-center mt-[20px] mb-[10px] max-lg:text-[26px]">
               Promote
             </h3>
-            <p className="text-[24px] text-[#53A4D6] font-medium text-center leading-[normal] max-lg:text-[18px]">
+            <p className="text-[24px] text-[#000] font-medium text-center leading-[normal] max-lg:text-[18px]">
               Promote your work to potential fans <br /> and others in the music
               industry
             </p>
@@ -49,7 +49,7 @@ const Features = () => {
             <h3 className="text-[38px] text-[#8A4DFF] font-bold text-center mt-[20px] mb-[10px] max-lg:text-[26px]">
               Network
             </h3>
-            <p className="text-[24px] text-[#53A4D6] font-medium text-center leading-[normal] max-lg:text-[18px]">
+            <p className="text-[24px] text-[#000] font-medium text-center leading-[normal] max-lg:text-[18px]">
               Reach out and stay in touch with <br /> fans and colleagues
             </p>
           </div>
@@ -60,7 +60,7 @@ const Features = () => {
             <h3 className="text-[38px] text-[#8A4DFF] font-bold text-center mt-[20px] mb-[10px] max-lg:text-[26px]">
               Simplify
             </h3>
-            <p className="text-[24px] text-[#53A4D6] font-medium text-center leading-[normal] max-lg:text-[18px]">
+            <p className="text-[24px] text-[#000] font-medium text-center leading-[normal] max-lg:text-[18px]">
               Simplify the process of expanding your music career with our many
               additional resources
             </p>
