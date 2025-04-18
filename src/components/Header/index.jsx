@@ -36,7 +36,13 @@ const Header = () => {
             ))}
           </div>
           <div className="flex items-center justify-between gap-[20px] max-md:gap-[12px]">
-            <button className="btn-pri">Join</button>
+            <Link
+              to="https://docs.google.com/forms/d/e/1FAIpQLSdJY7yJaiIzS7mmi1IrEcc3e9DtB5SaYm2AYJOmgQUVz8e4-w/viewform"
+              target="__blank"
+              className="btn-pri text-center"
+            >
+              Join
+            </Link>
             <button
               className="w-[50px] cursor-pointer max-lg:w-auto"
               onClick={() => navigate("/search")}
