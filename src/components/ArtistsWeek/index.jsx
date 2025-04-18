@@ -33,7 +33,7 @@ const ArtistsWeek = () => {
         <h2 className="text-grad text-[48px] font-bold max-lg:text-[36px] max-sm:text-[26px]">
           Artists of the Week
         </h2>
-        <div className="flex gap-[25px] mt-[40px] max-lg:mt-[30px] max-lg:flex-col ">
+        <div className="flex gap-[25px] mt-[40px] max-lg:mt-[30px] max-lg:flex-col min-h-[640px] max-h-[640px] max-lg:min-h-auto max-lg:max-h-max">
           {leftArtist && (
             <div
               className={`${
@@ -52,7 +52,7 @@ const ArtistsWeek = () => {
           )}
 
           {rightArtists.length > 0 && (
-            <div className="w-[50%] grid grid-cols-2 gap-[25px] max-lg:w-full max-md:grid-cols-1">
+            <div className="w-[50%] flex flex-wrap gap-[25px] max-lg:w-full max-md:grid-cols-1">
               {rightArtists.map((artist, index) => {
                 const isLastAndOdd =
                   rightArtists.length % 2 !== 0 &&
@@ -60,8 +60,8 @@ const ArtistsWeek = () => {
                 return (
                   <div
                     key={artist.id}
-                    className={`relative max-md:w-full max-md:col-span-1 ${
-                      isLastAndOdd ? "col-span-2" : ""
+                    className={`relative max-md:w-full max-md:col-span-1 h-[48%] w-[48%] max-xl:w-[47%] ${
+                      isLastAndOdd ? "w-full max-xl:w-[99%]" : ""
                     }`}
                   >
                     <img

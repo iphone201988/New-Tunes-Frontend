@@ -1,7 +1,7 @@
 import React from "react";
 import AboutUsImg from "../../assets/about-us.jpg";
-import Img1 from "../../assets/img-1.jpg";
-import Img2 from "../../assets/img-2.jpg";
+import Img1 from "../../assets/about-5.jpg";
+import Img2 from "../../assets/about-4.png";
 
 const AboutUs = () => {
   return (
@@ -44,7 +44,7 @@ const AboutUs = () => {
               </ul>
             </div>
             <div className="w-[50%] max-lg:w-[100%]">
-              <img className="rounded-[16px]" src={AboutUsImg} alt="" />
+              <img className="rounded-[16px] " src={AboutUsImg} alt="" />
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ const AboutUs = () => {
           </h3>
           <div className="flex items-center justify-center gap-[40px] mt-[40px] max-lg:mt-[30px] max-lg:flex-col max-lg:gap-[20px]">
             <div className="w-[20%] max-lg:w-[100%]">
-              <img className=" rounded-[16px]" src={Img1} alt="" />
+              <img className="rounded-[16px] min-h-[312px] max-h-[312px] w-full object-cover max-lg:min-h-[560px] max-md:min-h-[312px]" src={Img1} alt="" />
             </div>
             <div className="w-[50%] max-lg:w-[100%]">
               <h4 className="text-[28px] text-[#8A4DFF] font-bold">
@@ -96,7 +96,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="w-[20%] max-lg:w-[100%]">
-              <img className=" rounded-[16px]" src={Img2} alt="" />
+              <img className=" rounded-[16px] min-h-[312px] max-h-[312px] w-full object-cover max-lg:min-h-[560px]  max-md:min-h-[312px]" src={Img2} alt="" />
             </div>
           </div>
         </div>
